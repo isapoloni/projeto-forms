@@ -1,24 +1,21 @@
 @charset "UTF-8";
 
-
-body{
+.form-login  {
+    width: 50%;
+    padding: auto;
+    height: auto;
+    margin: auto;
     display: flex;
-    flex-direction:row;
-  
+    justify-content: space-evenly;
     
 }
 
-form {
-    align-items: left;
-}
-
-.login-input {
+.login-input input{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
     align-items: center;
-   
+    margin: 10px;
+    width: 300px;
 }
 
