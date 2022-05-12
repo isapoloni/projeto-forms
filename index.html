@@ -8,28 +8,66 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <div class="robot-img">
-            <img src="imagens/Robot face.gif" alt="">
-        </div>
-        <div></div>
-            <form action="">
-                <div class="inputs">
-                    <input type="text" value="" placeholder="Nome">
-                    <input type="email" name="" id="" placeholder="E-mail">
-                    <input type="radio" id="curso" name="curso" value="curso">
-                    <label for="curso">1° Período</label>
-                    <input type="radio" id="curso" name="curso" value="curso">
-                    <label for="curso">2° Período</label>
-                    <input type="radio" id="curso" name="curso" value="curso">
-                    <label for="curso">3° Período</label>
-                    <input type="radio" id="curso" name="curso" value="curso">
-                    <label for="curso">5° Período</label>
-                    <input type="radio" id="curso" name="curso" value="curso">
-                    <label for="curso">6° Período</label>
+    <div class="formulario">
+        <form action="">
+            <div class="inputs">
+
+                <h1>INFOESTE 2022</h1>
+                <div class="dados-pessoais">
+                    <label for="">Nome</label>
+                    <input name="nome" type="text" value="" placeholder="Nome">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="" placeholder="E-mail">
+                    <label for="ra">RA</label>
+                    <input type="text" name="ra" id="">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel">
                 </div>
-            </form>
-        </div>
-    </main>
+
+                <div class="cursos">
+                    <select>
+                        <option selected disabled> Curso</option>
+                        <option> Análise e desenvolvimento de Sistemas</option>
+                        <option> Ciencia da computação</option>
+                        <option> Sistemas de informação</option>
+                    </select>
+                    <select>
+                        <option selected disabled>Modalidade</option>
+                        <option>Presencial</option>
+                        <option>EAD</option>
+                        <option>Flexível</option>
+                    </select>
+                </div>
+
+                <div class="termo">
+                    <input type="radio" id="curso" name="curso" value="curso">
+                    <label for="curso">1° a 2° </label>
+                    <input type="radio" id="curso" name="curso" value="curso">
+                    <label for="curso">3° a 4°</label>
+                    <input type="radio" id="curso" name="curso" value="curso">
+                    <label for="curso">5° a 6° </label>
+                    <input type="radio" id="curso" name="curso" value="curso">
+                    <label for="curso">7° a 8°</label>
+                </div>
+
+                <div class="dias">
+                <label for="check">Quais dias deseja participar?</label>
+                   <input type="checkbox" name="check">
+                   <label for="check">1° dia</label>
+                   <input type="checkbox" name="check">
+                   <label for="check">2° dia</label>
+                   <input type="checkbox" name="check">
+                   <label for="check">3° dia</label>
+                   <input type="checkbox" name="check">
+                   <label for="check">4° dia</label>
+                </div>
+
+                <div class="area-texto">
+                    <label for="txt">Alguma observação?</label>
+                    <textarea name='txt'></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
