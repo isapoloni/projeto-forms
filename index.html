@@ -17,14 +17,21 @@
                     <input name="nome" type="text" value="" placeholder="Nome">
                     <label for="email">E-mail</label> 
                     <input type="email" name="email" id="" placeholder="E-mail">
-                    <label for="ra">RA</label>
-                    <input type="text" name="ra" id="">
                     <label for="telefone">Telefone</label>
                     <input type="tel">
                 </div>
 
+                <div class="radio">
+                    <input type="radio" id="curso" name="curso" value="curso">
+                    <label for="curso">Feminino</label>
+                    <input type="radio" id="curso" name="curso" value="curso">
+                    <label for="curso">Masculino</label>
+                    <input type="radio" id="curso" name="curso" value="curso">
+                    <label for="curso">Prefiro não responder</label>
+                </div>
+
                 <div class="cursos">
-                    <select>
+                    <select id="curso">
                         <option selected disabled> Curso</option>
                         <option> Análise e desenvolvimento de Sistemas</option>
                         <option>Ciência da computação</option>
@@ -32,50 +39,56 @@
                         <option>Gestão da Tecnologia da Informação</option>
                         <option>Jogos Digitais</option>
                         <option>Redes de Computadores</option>
-                        <option> Sistemas de Informação</option>
+                        <option>Sistemas de Informação</option>
                         <option>Sistemas para Internet</option>
                     </select>
-                    <select>
+                    <select id="modalidade">
                         <option selected disabled>Modalidade</option>
                         <option>Presencial</option>
                         <option>EAD</option>
                         <option>Flexível</option>
                     </select>
+                    <select id="periodo">
+                        <option selected disabled>Período</option>
+                        <option>1° Período</option>
+                        <option>2° Período</option>
+                        <option>3° Período</option>
+                        <option>4° Período</option>
+                        <option>5° Período</option>
+                        <option>6° Período</option>
+                        <option>7° Período</option>
+                        <option>8° Período</option>                    
+                    </select>
                 </div>
 
-                <div class="termo">
-                    <input type="radio" id="curso" name="curso" value="curso">
-                    <label for="curso">1° a 2° </label>
-                    <input type="radio" id="curso" name="curso" value="curso">
-                    <label for="curso">3° a 4°</label>
-                    <input type="radio" id="curso" name="curso" value="curso">
-                    <label for="curso">5° a 6° </label>
-                    <input type="radio" id="curso" name="curso" value="curso">
-                    <label for="curso">7° a 8°</label>
-                </div>
+                
 
+                <h3 id="label-dia" for="check">Quais dias deseja participar?</h3>
                 <div class="dias">
-                <label for="check">Quais dias deseja participar?</label>
-                   <input type="checkbox" name="check">
-                   <label for="check">1° dia</label>
-                   <input type="checkbox" name="check">
-                   <label for="check">2° dia</label>
-                   <input type="checkbox" name="check">
-                   <label for="check">3° dia</label>
-                   <input type="checkbox" name="check">
-                   <label for="check">4° dia</label>
+                    <input type="checkbox" name="check">
+                    <label for="check">1° dia</label>
+                    <input type="checkbox" name="check">
+                    <label for="check">2° dia</label>
+                    <input type="checkbox" name="check">
+                    <label for="check">3° dia</label>
+                    <input type="checkbox" name="check">
+                    <label for="check">4° dia</label>
                 </div>
 
                 <div class="area-texto">
                     <label for="txt">Alguma observação?</label>
                     <textarea name='txt'></textarea>
                 </div>
+                
                 <div class="botoes">
                     <button>Cancelar</button>
                     <button>Concluir</button>
                 </div>
             </div>
         </form>
+        <div class="link-pag-unoeste">
+            <p> Ainda não faz parte da UNOESTE?<a href="https://www.unoeste.br/presidenteprudente" target="_blank"> Clique aqui!</a></p>
+        </div>
     </div>
 </body>
 </html>

@@ -26,24 +26,38 @@ body {
     background-color: var(--cor2);
     margin: 0 auto;  
     margin-top: 30px;
-    width: 100vh; 
+    width: 80vh; 
 }
 
 .dados-pessoais {
-    background-color: aliceblue;
-    width:58%;
-    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .dados-pessoais > input {
-    display: inline;
-    width: 40;
-    height: 30px;
-    margin-bottom: 30px;
+    width: 50%;
+    height: 35px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px #115e8478;
+    text-indent: 5px;
+    background-color: #f7f7f7fc;
+}
+
+.dados-pessoais > input:focus {
+    outline-color: #65728C;
+}
+
+.dados-pessoais > input:hover {
+    box-shadow: 1px 3px 3px #115e8478;
 }
 
 .dados-pessoais > label {
-    display: block;
+    justify-content: flex-start;
+    margin-left: -40%;
+    margin-bottom: 5px;
 }
 
 .termo {
@@ -54,16 +68,40 @@ body {
     justify-content: space-between;
     width: 18%;
     margin: auto;
-    background-color: ghostwhite;
 }
 
-.termo input, label {
-   margin-left: 5px;
+.termo > select:focus {
+    background-color: #52B5F2;
 }
+
+.radio {
+    display:flex ; 
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.radio > input {
+    margin: 2px 4px;
+}
+
 
 .cursos {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    
+}
+
+.cursos #curso {
+    width: 22%;
+}
+
+.link-pag-unoeste > p {
+    font-size: 15px;
+    margin: 5px;
+    text-align: center;
 }
 
 .dias {
@@ -72,10 +110,14 @@ body {
     align-items: center;
     flex-wrap: wrap;  
     justify-content: space-between;
-    width: 15%;
+    width: 18%;
     margin: 0 auto;
-    background-color: ghostwhite;
     text-align: center; 
+}
+
+#label-dia {
+    font-weight: 100;
+    text-align: center;
 }
 
 .area-texto {
@@ -85,7 +127,7 @@ body {
     
 }
 
-.botoes{
+.botoes {
     display: flex;
     flex-direction: row;
     justify-content: center;
