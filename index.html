@@ -5,90 +5,105 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="shortcut icon" href="imagens/7f52f32af11dfa4e2f01d6d4c79de7788bb7daba1c567a0171cc502cdd1ac39b.png" type="image/x-icon">
 </head>
+    <script>
+        function salvar() {
+            alert("Inscrição realizada com sucesso!"); 
+        }
+    </script>
 <body>
+    <a id="link-pag-input" href="https://www.devmedia.com.br/novos-tipos-de-input-da-html-5/27109">Novos inputs no HTML5</a>
     <div class="formulario">
-        <form action="">
+        <form>
             <div class="inputs">
                 <h1>INFOESTE 2022</h1>
-                <div class="dados-pessoais">
-                    <label for="none">Nome</label>
-                    <input name="nome" type="text" value="" placeholder="Nome">
-                    <label for="email">E-mail</label> 
-                    <input type="email" name="email" id="" placeholder="E-mail">
-                    <label for="telefone">Telefone</label>
-                    <input type="tel">
-                </div>
+                    <div class="dados-pessoais">
+                        <label for="none">Nome</label>
+                            <input name="nome" type="text" value="" placeholder="Digite seu nome aqui">
+                        <label for="email">E-mail</label> 
+                            <input type="email" name="email" id="" placeholder="Digite seu e-mail aqui">
+                        <label for="telefone">Telefone</label>
+                            <input type="text" id="telefone" placeholder="Digite seu telefone aqui">
+                        <label id="data-nascimento" for="data">Data de nascimento</label>
+                            <input class="data"type="date">
+                    </div>
 
-                <div class="radio">
-                    <input type="radio" id="curso" name="curso" value="curso">
-                    <label for="curso">Feminino</label>
-                    <input type="radio" id="curso" name="curso" value="curso">
-                    <label for="curso">Masculino</label>
-                    <input type="radio" id="curso" name="curso" value="curso">
-                    <label for="curso">Prefiro não responder</label>
-                </div>
+                    <div class="radio">
+                            <input type="radio" id="curso" name="curso" value="curso">
+                        <label for="curso">Feminino</label>
+                            <input type="radio" id="curso" name="curso" value="curso">
+                        <label for="curso">Masculino</label>
+                            <input type="radio" id="curso" name="curso" value="curso">
+                        <label for="curso">Prefiro não responder</label>
+                    </div>
 
-                <div class="cursos">
-                    <select id="curso">
-                        <option selected disabled> Curso</option>
-                        <option> Análise e desenvolvimento de Sistemas</option>
-                        <option>Ciência da computação</option>
-                        <option>Ciência de dados</option>
-                        <option>Gestão da Tecnologia da Informação</option>
-                        <option>Jogos Digitais</option>
-                        <option>Redes de Computadores</option>
-                        <option>Sistemas de Informação</option>
-                        <option>Sistemas para Internet</option>
-                    </select>
-                    <select id="modalidade">
-                        <option selected disabled>Modalidade</option>
-                        <option>Presencial</option>
-                        <option>EAD</option>
-                        <option>Flexível</option>
-                    </select>
-                    <select id="periodo">
-                        <option selected disabled>Período</option>
-                        <option>1° Período</option>
-                        <option>2° Período</option>
-                        <option>3° Período</option>
-                        <option>4° Período</option>
-                        <option>5° Período</option>
-                        <option>6° Período</option>
-                        <option>7° Período</option>
-                        <option>8° Período</option>                    
-                    </select>
-                </div>
+                    <div class="cursos">
+                        <select id="curso">
+                            <option selected disabled> Curso</option>
+                            <option> Análise e desenvolvimento de Sistemas</option>
+                            <option>Ciência da computação</option>
+                            <option>Ciência de dados</option>
+                            <option>Gestão da Tecnologia da Informação</option>
+                            <option>Jogos Digitais</option>
+                            <option>Redes de Computadores</option>
+                            <option>Sistemas de Informação</option>
+                            <option>Sistemas para Internet</option>
+                        </select>
+                        <select id="modalidade">
+                            <option selected disabled>Modalidade</option>
+                            <option>Presencial</option>
+                            <option>EAD</option>
+                            <option>Flexível</option>
+                        </select>
+                        <select id="periodo">
+                            <option selected disabled>Período</option>
+                            <option>1° Período</option>
+                            <option>2° Período</option>
+                            <option>3° Período</option>
+                            <option>4° Período</option>
+                            <option>5° Período</option>
+                            <option>6° Período</option>
+                            <option>7° Período</option>
+                            <option>8° Período</option>                    
+                        </select>
+                    </div>
 
-                
+                        <h3 id="label-dia" for="check">Quais dias deseja participar?</h3>
+                    <div class="dias">
+                            <input type="checkbox" name="check">
+                        <label for="check">1° dia</label>
+                            <input type="checkbox" name="check">
+                        <label for="check">2° dia</label>
+                            <input type="checkbox" name="check">
+                        <label for="check">3° dia</label>
+                            <input type="checkbox" name="check">
+                        <label for="check">4° dia</label>
+                    </div>
 
-                <h3 id="label-dia" for="check">Quais dias deseja participar?</h3>
-                <div class="dias">
-                    <input type="checkbox" name="check">
-                    <label for="check">1° dia</label>
-                    <input type="checkbox" name="check">
-                    <label for="check">2° dia</label>
-                    <input type="checkbox" name="check">
-                    <label for="check">3° dia</label>
-                    <input type="checkbox" name="check">
-                    <label for="check">4° dia</label>
-                </div>
-
-                <div class="area-texto">
-                    <label for="txt">Alguma observação?</label>
-                    <textarea name='txt'></textarea>
-                </div>
-                
-                <div class="botoes">
-                    <button>Cancelar</button>
-                    <button>Concluir</button>
-                </div>
+                    <div class="area-texto">
+                        <label for="txt">Alguma observação?</label>
+                        <textarea name='txt'></textarea>
+                    </div>
+                    
+                    <div class="botoes">
+                        <button id="button1" type="reset">Cancelar</button>
+                        <button onclick="salvar()" id="button2" type="submit">Concluir</button>
+                    </div>
+            </div>
+            <div class="link-pag-unoeste">
+                <p> Ainda não faz parte da UNOESTE? <br> <a href="https://www.unoeste.br/presidenteprudente" target="_blank"> Clique aqui!</a></p>
             </div>
         </form>
-        <div class="link-pag-unoeste">
-            <p> Ainda não faz parte da UNOESTE?<a href="https://www.unoeste.br/presidenteprudente" target="_blank"> Clique aqui!</a></p>
-        </div>
+    </div>
+    <div class="logo-fipp">
+    <div class="logo-1">
+        <img  id="logo-atletica"src="imagens/7f52f32af11dfa4e2f01d6d4c79de7788bb7daba1c567a0171cc502cdd1ac39b.png" alt="Logo-FIPP">
+    </div>
+    <div class="logo-2">
+        <img id="logo-fipp-unoeste" src="imagens/logo-fipp-512x200.png">
+    </div>       
     </div>
 </body>
 </html>
